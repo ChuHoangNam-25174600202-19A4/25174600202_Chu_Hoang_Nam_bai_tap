@@ -1,0 +1,77 @@
+git config --global user.name "CHu Hoang Nam"
+git config --global user.email "chnam.25174600202@sv.uneti.edu"
+git config --global --list
+git checkout main
+git clone https://github.com/ChuHoangNam-25174600202-19A4/25174600202_Chu_Hoang_Nam_bai_tap
+git status
+git add README.md
+git commit -m "Cập nhật nội dung README.md với đoạn Lorem Ipsum"
+git push origin main
+git checkout -b branch_1
+echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+git add text_branch_1.txt
+git commit -m "Thêm text_branch_1.txt với nội dung Lorem ipsum"
+git push origin branch_1
+git checkout main
+git checkout -b branch_2
+echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+git add text_branch_2.txt
+git commit -m "Thêm text_branch_2.txt với nội dung Praesent ullamcorper"
+git push origin branch_2
+git checkout main
+git checkout -b branch_3
+echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+git add text_branch_3.txt
+git commit -m "Thêm text_branch_3.txt với nội dung Integer sit amet..."
+git push origin branch_3
+git checkout main
+git checkout -b branch_4
+echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+git add text_branch_4.txt
+git commit -m "Thêm text_branch_4.txt với nội dung Cras ac mi nec nisi..."
+git push origin branch_4
+git checkout main
+git branch --delete branch_4
+git branch -D branch_4
+git branch --list
+git branch -r
+git pull
+git branch
+git pull origin main
+git checkout main
+mkdir main_folder
+echo "Đây là file 1 trong main" > main_folder/main_txt_1.txt
+echo "Đây là file 2 trong main" > main_folder/main_txt_2.txt
+echo "Đây là file 3 trong main" > main_folder/main_txt_3.txt
+git add main_folder/
+git commit -m "Thêm thư mục main_folder và 3 file txt vào nhánh main"
+git push origin main
+git checkout branch_1
+git checkout -b branch_5
+git add text_branch_1.txt
+git commit -m "Chỉnh sửa nội dung text_branch_1.txt trên branch_5"
+git push origin branch_5
+git branch -d branch_5
+git push origin --delete branch_5
+nano text_branch_1.txt
+git add text_branch_1.txt
+git commit -m "Chỉnh sửa nội dung text_branch_1.txt trên branch_5"
+git push origin branch_5
+git branch -d branch_5
+git branch -D branch_5
+git checkout main
+git pull origin main
+git checkout main
+git branch -D branch_2
+git branch -D branch_3
+git branch -D branch_4
+git push origin --delete branch_2
+git push origin --delete branch_3
+git push origin --delete branch_4
+git branch         
+git branch -r    
+git checkout branch_1
+git pull origin main
+git push origin branch_1
+   
+
